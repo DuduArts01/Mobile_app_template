@@ -1,0 +1,29 @@
+<MainMenu>:
+    name: 'Main_Menu'
+
+#TopBar
+    MDBoxLayout:
+        orientation: 'vertical'
+
+        MDTopAppBar:
+            title: "Top Bar"
+            left_action_items: [["menu", lambda x: nav_drawer.set_state("open")]]
+            mg_bg_color: '#2196F3'
+            right_action_items: [["home", "Home"],["dots-vertical", "Dots"]]
+        
+        MDLabel:
+            text: 'Choose Menu style'
+            halign: 'center'
+            valign: 'center'
+        
+    MDNavigationDrawer:
+        id: nav_drawer
+        MDNavigationDrawerMenu:
+            MDNavigationDrawerHeader:
+                title: ' Logo'
+                text: ' 1.0.0'
+                source: 'DuduArts.jpg'
+
+            MDNavigationDrawerItem:
+
+            
